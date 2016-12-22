@@ -26,18 +26,23 @@
  font-style: italic;
  font-variant: normal;
 }
+
 body {
- font-family: Gothamy, Gotham-Book, Arial, sans-serif;
-     background-color: #272822;
+ 	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+    background-color: white
 
 }
-
+/*  */
 
 header {
-    color:  	#63D1E6;
+	margin-top: 80px;
+    color: #63D1E6;
     text-align: center;
     font-size: 40px;
  	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+
+	margin-bottom: 80px;
+
 }
 
 
@@ -48,9 +53,23 @@ h1 {
 }
 
 p {
-	color: #EEEEEE;
+	color: #272822;;
 	text-align: center;
     font-family: verdana;
     font-size: 20px;
  	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+}
+
+ul
+{
+ 	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+ 		text-align: center;
+
+
+}
+
+li
+{
+	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+
 }
