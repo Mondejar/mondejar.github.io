@@ -1,13 +1,56 @@
+@font-face {
+ font-family: 'Gothamy';
+ src: local('Gotham Book'), local('Gotham-Book');
+ font-weight: normal;
+ font-style: normal;
+ font-variant: normal;
+}
+@font-face {
+ font-family: 'Gothamy';
+ src: local('Gotham Bold'), local('Gotham-Bold');
+ font-weight: bold;
+ font-style: normal;
+ font-variant: normal;
+}
+@font-face {
+ font-family: 'Gothamy';
+ src: local('Gotham Book Italic'), local('Gotham-BookItalic');
+ font-weight: normal;
+ font-style: italic;
+ font-variant: normal;
+}
+@font-face {
+ font-family: 'Gothamy';
+ src: local('Gotham Bold Italic'), local('Gotham-BoldItalic');
+ font-weight: bold;
+ font-style: italic;
+ font-variant: normal;
+}
 body {
-    background-color: lightblue;
+ font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+     background-color: #272822;
+
 }
 
-h1 {
-    color: white;
+
+header {
+    color:  	#63D1E6;
     text-align: center;
+    font-size: 40px;
+ 	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+}
+
+
+h1 {
+    color: #B3F431;
+    text-align: center;
+ 	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
 }
 
 p {
+	color: #EEEEEE;
+	text-align: center;
     font-family: verdana;
     font-size: 20px;
+ 	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
 }
