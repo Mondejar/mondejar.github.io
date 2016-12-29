@@ -3,18 +3,6 @@
   box-sizing: border-box;
 }
 
-.content-web
-{
-  background: rgba(0, 0, 0, 0.8);
-  width: 1200px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-
-
-
 body {
     background: rgba(0, 0, 0, 0.1);  /*background: #272822;*/
     font-family: 'Roboto', sans-serif;
@@ -26,138 +14,130 @@ body {
     background-size: cover;
     padding: 0;
     margin: 0;
-    color: #FFFFFF;
+    color: #EEEEEE;
+}
+
+.web{
+    background: rgba(0, 0, 0, 0.75);
+    width: 900;
+    max-width: 900px; 
+    margin: 0 auto;
 }
 
 /*  HEADER*/
-header {
-    font-family: 'Roboto', sans-serif;
-    /*color: #63D1E6;*/
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.social{
-    margin-left: -25%;
-    margin-right: 10%;
-    float:right;
-    padding: 4px;
-}
-
-.social a {
-    text-decoration:none;
-    color:#FD971F;
-    padding-left: 20px;
-    /*font-size: 48px;*/
-} 
-
-.header a{
-    text-align: right;
-}
-
-a:visited {
-    text-decoration:none;
-    color:#FD971F;
-} 
-a:link {
-    text-decoration:none;
-    color:#FD971F;
-} 
-a:hover {
-    text-decoration:none;
-    color:#E6DB74;
-} 
-a:active {
-    text-decoration:none;
-    color:#FD971F;
-} 
-
-h1 {
-    font-size: 42px;
-    color: #B3F431;
-}
-
-
-h2 {
-    font-size: 32px;
-    color: #F92672;
-}
-
-
-ul
+.menu
 {
-    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    background: #EEEEEE;
 }
 
-li
-{
-
+.menu a{
+    font-size: 20px;
+    text-decoration:none;
+    margin-right: 30px;
+    color: #222222;
 }
 
-p {
-    color: #272822;
-    text-align: justify;
-    font-size: 32px;
-}
+.menu a:hover {
+    color:#FD971F;
+} 
+.menu a:active {
+    color:#FD971F;
+} 
 
 
 
-/* ABOUT ME / PROFILE
+
+/* PROFILE
 ----------------------*/
-/* Fixes the clearing of floats on child elements - 
-This class should be added to the parent element to 
-force clear the floats of the child elements */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .profile {
-  /*background: rgba(0, 0, 0, 0.8);*/
-  color: #fff;
   margin: 0 auto; 
 }
 
 .profile h1{
-    text-align: center;
+    color: #FD971F;
+    font-size: 24px;
+    overflow:auto;
+    padding-left: 20px;
 }
 .profile h2{
-    text-align: center;
-    /*border-bottom: 1px solid */
-
+    color: #EEEEEE;
+    font-size: 20px;
+    overflow:auto;
+    padding-left: 20px;
+}
+.profile h3{
+    font-size: 14px;
+    overflow:auto;
+    padding-left: 20px;
+}
+.profile a{
+    overflow:auto;
+    padding-left: 20px;
+    color: #FD971F;
 }
 .profile img {
-    /*float: right;
-    margin-left: 40%;
-    margin-right: 5%;*/
-    /*border: 1px solid #ddd;*/
-
-    width: 16%;
-    border-radius: 50%;
-    margin-left: 35%;
+    float: left;
+    width: 18%;
+    /*border-radius: 50%;*/
+    margin-left: 15%;
   
 }
 
 
-.profile p{
-    margin-left: 16%;
-    margin-right: 16%;
+/* COMMON
+-------------------*/
+h2{
+    color: #FD971F;
+    margin-left: 15%;
+}
+
+p{
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
     color: #FFFFFF;
-    line-height: 160%;
-    font-size: 20px;
+    line-height: 150%;
 }
 
-.profile .summary {
-  float: left;
-  width: 70%;
+.research ul{
+    list-style-type: none;
 }
+.research li{
+    text-decoration: none;
+}
+.research a{
 
+    text-decoration: none;
+    color: #FD971F;
+    overflow:auto;
+    padding-left: 20px;
+}
+.research img {
+    float: left;
+    width: 25%;
+    /*border-radius: 50%;*/
+    margin-left: 12%;
+}
 /************************** CODE & PROJECTS**************************/
+
+.code ul{
+    list-style-type: none;
+    margin-left: 15%;
+}
+
+.code a{
+
+    text-decoration: none;
+    color: #FD971F;
+    overflow:auto;
+    padding-left: 20px;
+}
+/*
 .content-code
 {
- /* background: rgba(0, 0, 0, 0.8);*/
 
   width: 1200px;
   max-width: 1200px;
@@ -183,7 +163,6 @@ force clear the floats of the child elements */
     text-align: justify;
     margin: 16px auto;
     width: 60%;
-    /*color: #FD971F;*/
     color: #F92672;
 }
 .code li{
@@ -203,26 +182,10 @@ force clear the floats of the child elements */
   font-size: 36px;
   border-bottom: 2px solid 
 }
+*/
 
-
-/* CONTACT & FOOTER 
+/* FOOTER 
 --------------------*/
-.contact {
-  /*background: #111;*/
-    color:#DDDCCC;
-}
-.contact p{
-    text-align: right;
-    color:#DDDCCC;
-    font-size: 20px;
-    margin-right: 5%;
-}
-
-.contact a{
-    color:#EEEFFF;
-    font-size: 20px;
-}
-
 
 footer {
   clear: both;
