@@ -1,147 +1,115 @@
 /* apply a natural box layout model to all elements */
-*, *:before, *:after {
-  box-sizing: border-box;
-}
 
 body {
-    /*
-    background: rgba(0, 0, 0, 0.3);  /*background: #272822;*/
     font-family: 'Roboto', sans-serif;
     background-color: white;
     line-height: 1.5;
     font-size: 16px;
-    /*background: url(back.png) no-repeat fixed;*/
-    background-position: 50%;
-    background-size: cover;
     padding: 0;
     margin: 0;
     color: #EEEEEE;
 }
 
 .web{
+    max-width: 960px;
     background-color: #FFFFFF;
-    /*background: rgba(0, 0, 0, 0.6);*/
-    max-width: 1280px; 
     margin: 0 auto;
 }
 
-/*  HEADER*/
-.menu
-{
-    min-width: 700px;
+
+
+.leftweb{
+    color: #777777;
     font-weight: bold;
-    width: 80%;
-    margin: 0 auto;
-    background: #EEEEEE;
-    padding-left: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
+    text-align: left;
+    font-size: 16px;
+    width: 270px; 
 
-.menu a{
-    font-size: 20px;
-    text-decoration:none;
-    margin-right: 30px;
-    color: #444444;
-}
-
-.l-menu
-{
     float:left;
 }
 
-.r-menu
-{
-    text-align: right;
-}
 
-.menu a:hover {
-    color:#3399FF;
-} 
-.menu a:active {
-    color:#3399FF;
-} 
-
-
-a.r-menu {
-    font-size: 36px;
-}
-
-/* PROFILE
-----------------------*/
-
-.profile {
-  text-align: center;
-}
-
-.profile h1{
-    color: #3399FF;
+.leftweb h1{
+    color: #222222;
     font-size: 30px;
-    overflow:auto;
-    padding-left: 20px;
-}
-.profile h2{
-    color: #666666;
-    overflow:auto;
-    padding-left: 20px;
-}
-.profile h3{
-    color: #999999;
-    font-size: 14px;
-    overflow:auto;
-    padding-left: 20px;
-}
-.profile a{
-    overflow:auto;
-    padding-left: 20px;
-    color: #3399FF;
-}
-.profile img {
-    float: left;
-    /*width: 18%;*/
-    /*border-radius: 50%;*/
-    margin-left: 15%;
-  
 }
 
+.leftweb h2{
+    color: #555555;
+    font-size: 18px;
+}
+
+
+.leftweb a{
+    font-size: 32px;
+    text-decoration:none;
+    margin-right: 20px;
+    color: #444444;
+}
+
+.leftweb a:hover {
+    color:#3399FF;
+} 
+.leftweb a:active {
+    color:#3399FF;
+} 
+
+
+.contact a{
+  font-size:16px;
+}
+
+
+
+
+/* RIGHT BODY*/
+.rightweb
+{
+    margin-left: 4%;
+    float:left;
+    width: 580px;
+}
+
+.rightweb a{
+    color:#3399FF;
+}
+
+.rightweb h1{
+    color: #222222;
+    font-size: 30px;
+}
+
+.rightweb h2{
+    color: #555555;
+    font-size: 20px;
+
+    text-align: justify;
+}
+
+.rightweb p{
+    text-align: justify;
+    color: #555555;
+    /*line-height: 150%;*/
+}
+
+.about a{
+    color:#FF7700;
+}
+
+.about a:hover {
+    color:#3399FF;
+} 
+.about a:active {
+    color:#3399FF;
+} 
 
 /* COMMON
 -------------------*/
 
-.about
-{
-    margin-left: 15%;
-}
-
-h2{
-    color: #BBEE11;
-    font-size: 22px;
-}
-
-.about p{
-    text-align: justify;
-    margin-left: 2%;
-    margin-right: 15%;
-    color: #555555;
-    line-height: 150%;
-}
-
-.about a{
-    text-align: right;
-    color: #3399FF;
-}
-
-.research
-{ 
-    margin-left: 15%;
-    margin-right: 10%;
-    color: #555555;
-}
-
-.research li{
+li{
     list-style-type: none;
-
 }
+
 .abstract
 {
     margin-left: 3%;
@@ -151,26 +119,6 @@ h2{
     text-justify: auto;
 }
 
-
-
-/************************** CODE & PROJECTS**************************/
-.code{
-    margin-left: 15%;
-    margin-right: 10%;
-    color: #555555;
-}
-.code ul{
-    list-style-type: none;
-    margin-left: 15%;
-}
-
-.code a{
-
-    text-decoration: none;
-    color: #3399FF;
-    overflow:auto;
-    padding-left: 20px;
-}
 
 
 /* FOOTER 
