@@ -121,6 +121,12 @@ li{
     list-style-type: none;
 }
 
+
+.content{
+    font-size: 16px;
+    text-align: justify;
+}
+
 .abstract
 {
     width: 95%;
@@ -131,6 +137,19 @@ li{
 
 
 
+code, pre {
+  background-color: #eee;
+  border: 1px solid #aaa;
+  color: #333;
+  font-family: monospace;
+  font-size: 16px;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+code {
+  padding: 5px;
+}
 /* FOOTER 
 --------------------*/
 
