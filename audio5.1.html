@@ -64,10 +64,12 @@
 		<br>
 		<br>
 		<br>
-		<h1>Configure your 5.1 Audio System<h1>
+
+
+		<h1>Configure your 5.1 Audio System</h1>
 
 		<div class ="content">
-			<p>By default Linux distribution are configured to use basic 2.0. If you have another audio system you will need to change the following lines from file <code>/etc/pulse/daemon.conf</code> :</p>
+			<p>By default Linux distribution are configured to use basic 2.0. If you have another audio system you will need to change the following lines from file <code>/etc/pulse/daemon.conf</code>: </p>
 			
 <pre>
 enable-lfe-remixing = yes
@@ -75,11 +77,11 @@ enable-lfe-remixing = yes
 default-sample-channels = 6
 </pre>
 
-<p>The value of <code>default-sample-channels</code> must be equal to the number of speakers: (2.1 -> 3),  (5.1 -> 6), (7.1 -> 8). </p>
+<p>The value of <code>default-sample-channels</code> must be equal to the number of speakers: (2.1 &rarr; 3),  (5.1 &rarr; 6), (7.1 &rarr; 8). </p>
 
 <br>
-<p>If your mother-board only have three jack connectors:
-<span style="color: #66FF66;">Green</span> - L/R Line out, <span style="color: #6666FF;">Blue</span> - L/R Line in, <span style="color: #FF66FF;">Pink</span> - Mic in. You can reassign each jack functionality via <code>hdajackretask</code>, and the set your Mic in and L/R Line in as L/R Rear and Front/L inputs for your 5.1.</p>
+<h3>If your mother-board only have three jack connectors:</h3>
+<p><span style="color: #66FF66;">Green</span> - L/R Line out, <span style="color: #6666FF;">Blue</span> - L/R Line in, <span style="color: #FF66FF;">Pink</span> - Mic in. You can reassign each jack functionality via <code>hdajackretask</code>, and then set your Mic in and L/R Line in as L/R Rear and Front/L inputs for your 5.1.</p>
 
 <p>To install <code>hdajackretask</code> type on your terminal:</p>
 <pre>
