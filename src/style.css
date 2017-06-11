@@ -75,10 +75,18 @@ body {
 
 
 /* RIGHT BODY*/
+
+
 .rightweb
 {
+    font-size: 16px;
     float:left;
     width: 580px;
+}
+
+.rightweb h3{
+    color: #555555;
+    font-size: 18px;
 }
 
 .rightweb a{
@@ -145,6 +153,7 @@ code, pre {
   font-size: 16px;
   text-align: left;
   white-space: pre-wrap;
+  font-weight: bold;
 }
 
 code {
