@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title> mondejar.github.io </title>
+	<link rel="stylesheet" href="src/style.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class = "web">
+
+	<div class="leftweb">
+		<header> 
+				<br><br>
+				<h1>Mondéjar-Guerra  Víctor M.</h1>
+				<div> 
+				Contact me:
+					<br>
+					<a href="https://github.com/mondejar" title="Github" target="_blank"><i class="fa fa-github-square"></i></a>
+					<a href="https://www.linkedin.com/in/victor-mondejar" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+					<br>
+				</div>
+
+				<div class="contact"> 
+					<a href="victormondejar@gmail.com"> victormondejar@gmail.com</a>
+				</div>
+		</header>
+
+		<!-- CV -->	
+		<br>
+			<div class="contact">
+				<h2>Curriculum Vitae</h2>
+				<p><a href="cv/full_CV.pdf" target="_blank"> Full</a></p> 
+				<a href="cv/full_CV.pdf" title="fullCV" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+				<p><a href="cv/CVN.pdf" target="_blank"> CVN</a></p>
+				<a href="cv/CVN.pdf" title="CVN" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+			</div>
+
+
+		<div class="index">
+			<hr>
+			<br>
+			<p><a href="index.html"> Home</a></p> 
+
+			<p><a href=""> Research</a></p> 
+
+			<p><a href=""> Projects</a></p> 
+
+			<p><a href=""> Tutorials</a></p> 
+		</div>
+	</div>
+
+ 	<!-- ************************************************************************************  -->
+
+
+	<article>
+	<div class ="rightweb">
+		<header></header> 
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1>Configure your 5.1 Audio System<h1>
+
+		<div class ="content">
+			<p>By default Linux distribution are configured to use basic 2.0. If you have another audio system you will need to change the following lines from file <code>/etc/pulse/daemon.conf</code> :</p>
+			
+<pre>
+enable-lfe-remixing = yes
+...
+default-sample-channels = 6
+</pre>
+
+<p>The value of <code>default-sample-channels</code> must be equal to the number of speakers: (2.1 -> 3),  (5.1 -> 6), (7.1 -> 8). </p>
+
+<br>
+<p>If your mother-board only have three jack connectors:
+<span style="color: #66FF66;">Green</span> - L/R Line out, <span style="color: #6666FF;">Blue</span> - L/R Line in, <span style="color: #FF66FF;">Pink</span> - Mic in. You can reassign each jack functionality via <code>hdajackretask</code>, and the set your Mic in and L/R Line in as L/R Rear and Front/L inputs for your 5.1.</p>
+
+<p>To install <code>hdajackretask</code> type on your terminal:</p>
+<pre>
+sudo pacman -S alsa-tools 
+</pre>
+
+<p>or if you use apitude:</p>
+<pre>
+sudo apt-get install alsa-tools 
+</pre>
+
+<center>
+<img src="img/hdaretask.png" alt="hdajackretask" style="width:500px;">
+</center>
+
+
+
+			<br>
+			That configuration have been tested on Antergos/Arch Linux distribtion.
+	</article>
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://https-mondejar-github-io.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
+
+	<footer>
+			Created by Víctor Mondéjar. 
+	</footer>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>
