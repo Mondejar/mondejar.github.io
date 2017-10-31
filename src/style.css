@@ -18,99 +18,113 @@ body {
 
 
 
-.leftweb{
+.topweb{
     color: #444444;
     font-weight: bold;
     text-align: left;
     font-size: 16px;
-    width: 270px; 
-
-    float:left;
+    width: 960px; 
 
     margin-right: 4%;
 
 }
 
 
-.leftweb h1{
+.topweb h1{
     color: #222222;
     font-size: 30px;
+    text-align: center;
 }
 
-.leftweb h2{
+.topweb h2{
     color: #555555;
     font-size: 18px;
 }
 
 
-.leftweb a{
+.topweb a{
     font-size: 32px;
     text-decoration:none;
     margin-right: 20px;
     color: #444444;
 }
 
-.leftweb a:hover {
+.topweb a:hover {
     color:#3399FF;
 } 
-.leftweb a:active {
+.topweb a:active {
     color:#3399FF;
 } 
-
-
-.contact a{
-  font-size:16px;
-  float: left;
-  color:#999999;
-}
-
-
-.index{
-    clear: both;
-}
 
 .index a{
-    font-size: 16px;
+    font-size: 20px;        
+}
+
+.index ul {
+    text-align: justify;
+}
+
+.index ul:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.index ul:before {
+    content: '';
+    display: block;
+    margin-top: -1.25em;
+}
+
+.index li {
+    display: inline-block;
+    margin-right: -.25em;
+    position: relative;
+    top: 1.25em;
 }
 
 
 /* RIGHT BODY*/
 
 
-.rightweb
+.botweb
 {
     font-size: 16px;
-    float:left;
-    width: 580px;
+    width: 940px;
     color: #555555;
 }
 
 
-.rightweb a{
+.botweb a{
     color:#3399FF;
 }
 
-.rightweb h1{
+.botweb h1{
     color: #222222;
     font-size: 30px;
 }
 
-.rightweb h2{
+.botweb h2{
     color: #555555;
     font-size: 20px;
     text-align: justify;
 }
 
-.rightweb h3{
+.botweb h3{
     color: #555555;
     font-size: 18px;
 }
 
 
-.rightweb p{
+.botweb p{
     text-align: justify;
     color: #555555;
     /*line-height: 150%;*/
+}
+
+
+.about{
+    margin-left: 300px;
 }
 
 .about a{
@@ -123,6 +137,18 @@ body {
 .about a:active {
     color:#3399FF;
 } 
+
+.contact{
+    float: left;
+}
+
+.contact a{
+    font-size:16px;
+    float: left;
+    margin-left: 8px;
+    color:#999999;
+  }
+  
 
 /* COMMON
 -------------------*/
