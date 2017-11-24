@@ -123,9 +123,6 @@ body {
 }
 
 
-.about{
-    margin-left: 300px;
-}
 
 .about a{
     color:#FF7700;
@@ -143,12 +140,26 @@ body {
 }
 
 .contact a{
-    font-size:16px;
+    font-size:18px;
     float: left;
+    text-align: center;
     margin-left: 8px;
     color:#999999;
   }
   
+.right_contact
+{
+    margin-left: 20px;
+
+}
+
+.contact a:hover {
+    color:#3399FF;
+} 
+.contact a:active {
+    color:#3399FF;
+} 
+
 
 /* COMMON
 -------------------*/
